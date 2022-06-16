@@ -15,24 +15,24 @@ import { Link } from "react-router-dom";
 const pages = [
   {
     label: "Home",
-    link: "/",
+    link: "/#/",
   },
 
   {
     label: "About",
-    link: "/About",
+    link: "/#/About",
   },
   {
     label: "Portfolio",
-    link: "/Portfolio",
+    link: "/#/Portfolio",
   },
   {
     label: "Social",
-    link: "/Social",
+    link: "/#/Social",
   },
   {
     label: "Contact",
-    link: "/Contact",
+    link: "/#/Contact",
   },
 ];
 
@@ -103,7 +103,7 @@ const ResponsiveAppBar = () => {
             >
               {pages.map((page) => (
                 <Link
-                  to={page.link}
+                  to={page.link.substring(2)}
                   style={{ textDecoration: "none", color: "inherit" }}
                 >
                   <MenuItem key={page.label} onClick={handleCloseNavMenu}>
@@ -134,18 +134,14 @@ const ResponsiveAppBar = () => {
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (
-              <Link
-                to={page.link}
-                style={{ textDecoration: "none", color: "inherit" }}
-              >
                 <Button
                   key={page.label}
                   onClick={handleCloseNavMenu}
+                  href={page.link}
                   sx={{ my: 2, color: "white", display: "block" }}
                 >
                   {page.label}
                 </Button>
-              </Link>
             ))}
           </Box>
         </Toolbar>

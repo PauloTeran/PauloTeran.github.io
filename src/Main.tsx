@@ -5,10 +5,11 @@ import { Portfolio } from "./Pages/Portfolio";
 import { Social } from "./Pages/Social";
 import { Contact } from "./Pages/Contact";
 import ResponsiveAppBar from "./Components/Main/ResponsiveAppBar";
+import { Container } from "@mui/material";
 
 const Main = () => {
   return (
-    <>
+    <Container maxWidth={false} disableGutters={true}>
       <ResponsiveAppBar></ResponsiveAppBar>
       <Routes>
         <Route path="/" element={<Home />} />
@@ -17,7 +18,7 @@ const Main = () => {
         <Route path="/social" element={<Social />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
-    </>
+    </Container>
   );
 };
 export default Main;
