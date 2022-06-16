@@ -1,6 +1,7 @@
 import { Avatar, Box, Link, Typography } from "@mui/material";
 import cover from "../../Assets/CoverImage.jpg";
 import avatar from "../../Assets/Avatar.png";
+import logo from "../../Assets/logo.svg";
 
 export const HomeHeader = () => {
   return (
@@ -32,24 +33,33 @@ export const HomeHeader = () => {
           align="center"
           sx={{ marginBottom: "1.25rem" }}
         >
-          LUIS PAULO DEV
+          LUIS PAULO TERÁN
         </Typography>
         <Typography
           variant="body1"
           align="center"
           sx={{ maxWidth: "34rem", marginBottom: "1.875rem" }}
         >
-          yadda yadda yadda yadda yadda yadda yadda yadda yadda yadda yadda
-          yadda yadda yadda yadda yadda yadda yadda yadda yadda yadda yadda
-          yadda yadda{" "}
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+          laoreet felis at lectus rutrum, nec efficitur dui accumsan. Sed
+          pharetra accumsan ornare. Aenean augue nibh, sodales nec justo at,
+          ultricies auctor sem. Praesent suscipit nulla quis sollicitudin
+          egestas. Donec sagittis odio sed libero aliquam.
         </Typography>
+        <img
+          src={logo}
+          alt="LP"
+          width="72px"
+          height="72px"
+          style={{ marginBottom: "1.87rem" }}
+        />
         <Link
           href="/#/About"
           variant="body1"
           align="center"
-          sx={{ fontWeight: "bold", marginBottom: "2.5rem" }}
+          sx={{ fontWeight: "bold", marginBottom: "2.5rem", width: "8rem" }}
         >
-          LEER MAS
+          READ MORE
         </Link>
       </Box>
     </>
