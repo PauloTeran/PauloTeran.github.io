@@ -9,7 +9,14 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 export const HomeTechnologiesSection = () => {
   return (
-    <Box sx={{ paddingTop: "2rem", paddingBottom: "2rem", backgroundColor: "#eeeeee" }}>
+    <Box
+      sx={{
+        paddingTop: "2rem",
+        paddingBottom: "2rem",
+        marginBottom: "2.5rem",
+        backgroundColor: "#eeeeee",
+      }}
+    >
       <Typography variant="h4" align="center" sx={{ marginBottom: "1.5rem" }}>
         TECH STACK
       </Typography>

@@ -27,10 +27,6 @@ const pages = [
     link: "/#/Portfolio",
   },
   {
-    label: "Social",
-    link: "/#/Social",
-  },
-  {
     label: "Contact",
     link: "/#/Contact",
   },
@@ -50,7 +46,7 @@ const ResponsiveAppBar = () => {
   };
 
   return (
-    <AppBar position="fixed">
+    <AppBar position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <DevicesIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />

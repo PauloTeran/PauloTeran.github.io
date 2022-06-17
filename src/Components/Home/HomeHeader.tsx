@@ -7,7 +7,7 @@ export const HomeHeader = () => {
   return (
     <>
       <Box
-        sx={{ display: "flex", flexDirection: "column", alignItems: "center" }}
+        sx={{ display: "flex", flexDirection: "column", alignItems: "center", marginBottom: "2.5rem" }}
       >
         <img
           src={cover}
@@ -57,7 +57,7 @@ export const HomeHeader = () => {
           href="/#/About"
           variant="body1"
           align="center"
-          sx={{ fontWeight: "bold", marginBottom: "2.5rem", width: "8rem" }}
+          sx={{ fontWeight: "bold", width: "8rem" }}
         >
           READ MORE
         </Link>
