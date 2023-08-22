@@ -1,7 +1,7 @@
 import { Box, Typography } from "@mui/material";
 import cover from "../../Assets/CoverImage.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTwitter } from "@fortawesome/free-brands-svg-icons";
+import { faSquareXTwitter } from "@fortawesome/free-brands-svg-icons";
 import { faFacebook } from "@fortawesome/free-brands-svg-icons";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faYoutube } from "@fortawesome/free-brands-svg-icons";
@@ -36,7 +36,7 @@ export const HomeContactSection = () => {
           rel="noreferrer"
         >
           <FontAwesomeIcon
-            icon={faTwitter}
+            icon={faSquareXTwitter}
             fontSize="2.5rem"
             color="#000000"
             style={{ padding: "0.5rem" }}
